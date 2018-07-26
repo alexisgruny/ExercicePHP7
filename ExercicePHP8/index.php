@@ -7,11 +7,13 @@
 <body>
   <p>
     <?php
-    $addition = 3 + 4;
-    $multiplication = 5 * 20;
-    $division = 45 / 5;
-    echo $addition. ', '. $multiplication. ', '. $division;
-    ?>
+    $isOk = true;
+    if ($isOk == true){
+      echo 'c\'est ok !!';
+    } else {
+      echo 'c\'est pas bon !!!';
+    };
+  ?>
   </p>
 </body>
 </html>

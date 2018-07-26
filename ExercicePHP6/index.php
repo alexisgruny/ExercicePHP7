@@ -7,8 +7,12 @@
 <body>
   <p>
     <?php
-    $name = 'Théophane';
-    echo 'Bonjours '. $name. ', comment vas tu ?';
+    $age = 20;
+    if ($age >= 18){
+      echo 'tu es majeur';
+    } else {
+      echo 'tu n\'est pas majeur';
+    };
     ?>
   </p>
 </body>

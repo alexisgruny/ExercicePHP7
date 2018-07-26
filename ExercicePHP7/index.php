@@ -7,10 +7,12 @@
 <body>
   <p>
     <?php
-    $firstName = 'Théophane';
-    $lastName = 'Dupont';
-    $age = 12;
-    echo 'Bonjour '. $lastName. ' '. $firstName. ', tu as '. $age. ' ans';
+    $isOk = false;
+    if ($isOk == false){
+      echo 'c\'est pas bon !!!';
+    } else {
+      echo 'c\'est ok !!';
+    };
     ?>
   </p>
 </body>

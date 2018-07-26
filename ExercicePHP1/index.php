@@ -7,8 +7,12 @@
 <body>
   <p>
     <?php
-    $name = 'what\'s this';
-    echo $name;
+    $age = 12;
+    if($age <=17){
+      echo 'Vous êtes mineur';
+    } else {
+      echo 'vous êtes majeur';
+    };
     ?>
   </p>
 </body>

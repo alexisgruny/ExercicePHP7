@@ -7,12 +7,10 @@
 <body>
   <p>
     <?php
-    $km = 1;
-    echo $km. ', ';
-    $km = 3;
-    echo $km. ', ';
-    $km = 125;
-    echo $km;
+    $age = 12;
+    $gender = 'homme';
+    echo ($gender == true)? 'Vous êtes un homme' : 'Vous êtes une femme';
+    echo ($age == true)? ' et vous êtes mineur' : ' et vous êtes majeur';
     ?>
   </p>
 </body>

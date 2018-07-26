@@ -7,10 +7,13 @@
 <body>
   <p>
     <?php
-    $lastName = 'Dupont';
-    $firstName = 'Théodule';
-    $age = '12';
-    echo $lastName. ' '. $firstName. ' '. $age ;
+    $isEasy = true;
+    if ($isEasy = true){
+      echo 'c\'est facil!! ';
+    } else {
+      echo 'c\'est difficile!!! ';
+    }
+    echo ($isEasy == true)? 'c\'est facil!! ' : 'c\'est difficile !!! ';
     ?>
   </p>
 </body>
