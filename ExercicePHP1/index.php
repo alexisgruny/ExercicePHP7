@@ -7,12 +7,11 @@
 <body>
   <p>
     <?php
-    $age = 12;
-    if($age <=17){
-      echo 'Vous êtes mineur';
-    } else {
-      echo 'vous êtes majeur';
-    };
+    $count = 0;
+    while ($count != 10){
+      echo $count. ' ';
+      $count++;
+    }
     ?>
   </p>
 </body>

@@ -7,13 +7,12 @@
 <body>
   <p>
     <?php
-    $age = 20;
-    if ($age >= 18){
-      echo 'tu es majeur';
-    } else {
-      echo 'tu n\'est pas majeur';
+    $count = 20;
+    while($count !=0){
+      echo 'C\'est presque bon ';
+      $count--;
     };
-    ?>
+?>
   </p>
 </body>
 </html>

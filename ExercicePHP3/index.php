@@ -7,10 +7,12 @@
 <body>
   <p>
     <?php
-    $age = 12;
-    $gender = 'homme';
-    echo ($gender == true)? 'Vous êtes un homme' : 'Vous êtes une femme';
-    echo ($age == true)? ' et vous êtes mineur' : ' et vous êtes majeur';
+    $count = 100;
+    $multiplicateur = 2;
+    while($count != 10){
+      echo $count*$multiplicateur. ' ';
+      $count--;
+    };
     ?>
   </p>
 </body>

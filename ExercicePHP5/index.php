@@ -7,12 +7,11 @@
 <body>
   <p>
     <?php
-    $gender = 'homme';
-    if ($gender != 'homme'){
-  echo 'C\'est une développeuse !!!';
-} else {
-  echo 'c\'est un développeur !!!';
-};
+    $count = 1;
+    while($count !=15){
+      echo 'On y arrive presque ';
+      $count++;
+    };
 ?>
   </p>
 </body>

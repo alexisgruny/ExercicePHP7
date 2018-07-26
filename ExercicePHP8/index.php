@@ -7,13 +7,12 @@
 <body>
   <p>
     <?php
-    $isOk = true;
-    if ($isOk == true){
-      echo 'c\'est ok !!';
-    } else {
-      echo 'c\'est pas bon !!!';
+    $count = 200;
+    while($count >= 0 ){
+      echo 'On tient le bon bout ';
+      $count = $count - 12;
     };
-  ?>
+?>
   </p>
 </body>
 </html>

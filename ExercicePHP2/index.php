@@ -7,13 +7,12 @@
 <body>
   <p>
     <?php
-    $isEasy = true;
-    if ($isEasy = true){
-      echo 'c\'est facil!! ';
-    } else {
-      echo 'c\'est difficile!!! ';
-    }
-    echo ($isEasy == true)? 'c\'est facil!! ' : 'c\'est difficile !!! ';
+    $count = 0;
+    $multiplication = 2;
+    while($count != 20){
+      echo $count*$multiplication. ' ';
+      $count++;
+    };
     ?>
   </p>
 </body>
