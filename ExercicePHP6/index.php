@@ -6,15 +6,9 @@
 </head>
 <body>
   <p>
-    <?php
-   $firstname = 'Théodule';
-   $lastname = 'Dupont';
-   $age = 12;
-   function concatenation($name, $forname, $hisAge) {
-       return 'Bonjour ' . $name . ' ' . $forname . ', tu as ' . $hisAge . ' ans.';
-   }
-   echo concatenation($firstname, $lastname, $age);
-    ?>
+    <?=
+     (isset($_GET['building']) && isset($_GET['room']))?$_GET['building']. ', '. $_GET['room'] : ' ';
+     ?>
   </p>
 </body>
 </html>

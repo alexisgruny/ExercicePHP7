@@ -6,20 +6,9 @@
 </head>
 <body>
   <p>
-    <?php
-    $random1 = rand(1,5);
-    $random2 = rand(1,5);
-    function checkNumber($num1, $num2) {
-      if ($num1 > $num2) {
-        return '. Le premier nombre est plus grand.';
-      }elseif ($num1 < $num2) {
-        return '. Le premier nombre est plus petit.';
-      }else {
-        return '. Les deux nombres sont identiques.';
-      }
-    }
-    echo evalNumbers($random1, $random2);
-    ?>
+    <?=
+     (isset($_GET['language']) && isset($_GET['server']))?$_GET['language']. ', '. $_GET['server'] : ' ';
+     ?>
   </p>
 </body>
 </html>

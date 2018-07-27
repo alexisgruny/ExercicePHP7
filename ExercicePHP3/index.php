@@ -6,14 +6,9 @@
 </head>
 <body>
   <p>
-    <?php
-    $who = 'qui est';
-    $you = 'tu ?';
-    function concatenation($text, $text2) {
-      return $text . ' ' . $text2;
-    }
-    echo concatatenation($who, $you);
-    ?>
+    <?=
+     (isset($_GET['startDate']) && isset($_GET['endDate']))?$_GET['startDate']. ', '. $_GET['endDate'] : ' ';
+     ?>
   </p>
 </body>
 </html>

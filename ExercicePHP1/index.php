@@ -7,10 +7,8 @@
 <body>
   <p>
     <?php
-    function bool() {
-      return true;
-    }
-  echo bool();
+    echo $_GET['lastname'];
+    echo $_GET['firstname']; 
      ?>
   </p>
 </body>

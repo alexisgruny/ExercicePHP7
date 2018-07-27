@@ -6,13 +6,8 @@
 </head>
 <body>
   <p>
-    <?php
-    $random = rand(1,50);
-    $theodule= 'Le nombre préféré de Thédoule est le ';
-    function concatenation($num, $txt) {
-        return $txt . $num;
-    }
-    echo concatenation($random, $theodule);
+    <?=
+     (isset($_GET['week']))?$_GET['week'] : ' ';
      ?>
   </p>
 </body>

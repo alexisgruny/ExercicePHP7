@@ -7,14 +7,13 @@
 <body>
   <p>
     <?php
-    $age = 12;
-    $gender = 'homme';
-    function typeOfHuman($bin , $year){
-      echo ($bin == 'homme')? 'vous êtes un homme': '';
-      echo ($bin == 'femme')? 'vous êtes une femme': '';
-      echo ($year >= 18)? 'vous êtes majeur': 'vous êtes mineurs';
-    }
-    echo typeOfHuman($age, $gender);
+    $departements = array(
+      02 => 'Aisne',
+      60 => 'Oise',
+      59 => 'Nord',
+      62 => 'Pas-de-calais',
+      80 => 'Somme',
+      51 => 'marne'
     ?>
   </p>
 </body>

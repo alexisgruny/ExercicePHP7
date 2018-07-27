@@ -7,11 +7,9 @@
 <body>
   <p>
     <?php
-    $name='Théodule !!';
-    function returnString($text) {
-      return $text;
-    }
-    echo returnString($name);
+    echo $_GET['lastname'];
+    echo $_GET['firstname'];
+    echo (empty($_GET['age']))? ' empty': $_GET['age'];
      ?>
   </p>
 </body>

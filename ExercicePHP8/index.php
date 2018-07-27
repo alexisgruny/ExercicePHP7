@@ -7,15 +7,24 @@
 <body>
   <p>
     <?php
-    $number1 = 12;
-    $number2 = 2;
-    $number3 = 123;
-    function calc($num1, $num2, $num3){
-      $result = $num1 + $num2 + $num3;
-      return $result;
+    $calendrier = array(
+      'Janvier ',
+      'Fevrier ',
+      'Mars ',
+      'avril ',
+      'Mai ',
+      'Juin ',
+      'Juillet ',
+      'Août ',
+      'Septembre ',
+      'Octobre ',
+      'Novembre ',
+      'Décembre ',
+    );
+    for ($i=0; $i < 12 ; $i++){
+      echo $calendrier[$i];
     };
-    echo calc($number1, $number2, $number3);
-?>
+     ?>
   </p>
 </body>
 </html>
