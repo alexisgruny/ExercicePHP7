@@ -7,12 +7,13 @@
 <body>
   <p>
     <?php
-    $count = 1;
-    while($count !=15){
-      echo 'On y arrive presque ';
-      $count++;
-    };
-?>
+    $random = rand(1,50);
+    $theodule= 'Le nombre préféré de Thédoule est le ';
+    function concatenation($num, $txt) {
+        return $txt . $num;
+    }
+    echo concatenation($random, $theodule);
+     ?>
   </p>
 </body>
 </html>

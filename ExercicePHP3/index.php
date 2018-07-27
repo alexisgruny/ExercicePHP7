@@ -7,12 +7,12 @@
 <body>
   <p>
     <?php
-    $count = 100;
-    $multiplicateur = 2;
-    while($count != 10){
-      echo $count*$multiplicateur. ' ';
-      $count--;
-    };
+    $who = 'qui est';
+    $you = 'tu ?';
+    function concatenation($text, $text2) {
+      return $text . ' ' . $text2;
+    }
+    echo concatatenation($who, $you);
     ?>
   </p>
 </body>

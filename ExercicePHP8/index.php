@@ -7,11 +7,14 @@
 <body>
   <p>
     <?php
-    $count = 200;
-    while($count >= 0 ){
-      echo 'On tient le bon bout ';
-      $count = $count - 12;
+    $number1 = 12;
+    $number2 = 2;
+    $number3 = 123;
+    function calc($num1, $num2, $num3){
+      $result = $num1 + $num2 + $num3;
+      return $result;
     };
+    echo calc($number1, $number2, $number3);
 ?>
   </p>
 </body>

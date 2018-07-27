@@ -7,12 +7,14 @@
 <body>
   <p>
     <?php
-    $count = 20;
-    while($count !=0){
-      echo 'C\'est presque bon ';
-      $count--;
-    };
-?>
+   $firstname = 'Théodule';
+   $lastname = 'Dupont';
+   $age = 12;
+   function concatenation($name, $forname, $hisAge) {
+       return 'Bonjour ' . $name . ' ' . $forname . ', tu as ' . $hisAge . ' ans.';
+   }
+   echo concatenation($firstname, $lastname, $age);
+    ?>
   </p>
 </body>
 </html>

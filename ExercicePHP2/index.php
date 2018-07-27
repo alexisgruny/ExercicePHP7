@@ -7,13 +7,12 @@
 <body>
   <p>
     <?php
-    $count = 0;
-    $multiplication = 2;
-    while($count != 20){
-      echo $count*$multiplication. ' ';
-      $count++;
-    };
-    ?>
+    $name='Théodule !!';
+    function returnString($text) {
+      return $text;
+    }
+    echo returnString($name);
+     ?>
   </p>
 </body>
 </html>

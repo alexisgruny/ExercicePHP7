@@ -7,12 +7,11 @@
 <body>
   <p>
     <?php
-    $count = 0;
-    while ($count != 10){
-      echo $count. ' ';
-      $count++;
+    function bool() {
+      return true;
     }
-    ?>
+  echo bool();
+     ?>
   </p>
 </body>
 </html>

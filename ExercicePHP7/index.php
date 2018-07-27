@@ -7,12 +7,15 @@
 <body>
   <p>
     <?php
-    $count = 1;
-    while($count <= 100 ){
-      echo 'On tient le bon bout ';
-      $count = $count + 15;
-    };
-?>
+    $age = 12;
+    $gender = 'homme';
+    function typeOfHuman($bin , $year){
+      echo ($bin == 'homme')? 'vous êtes un homme': '';
+      echo ($bin == 'femme')? 'vous êtes une femme': '';
+      echo ($year >= 18)? 'vous êtes majeur': 'vous êtes mineurs';
+    }
+    echo typeOfHuman($age, $gender);
+    ?>
   </p>
 </body>
 </html>
