@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html lang=fr>
+<html lang="fr">
 <head>
   <meta charset="utf-8" />
-  <title>Exercice 8</title>
+  <title>Exercice 7</title>
 </head>
 <body>
-  <p>
-    <?php
-    $calendrier = array(
-      'Janvier ',
-      'Fevrier ',
-      'Mars ',
-      'avril ',
-      'Mai ',
-      'Juin ',
-      'Juillet ',
-      'Août ',
-      'Septembre ',
-      'Octobre ',
-      'Novembre ',
-      'Décembre ',
-    );
-    for ($i=0; $i < 12 ; $i++){
-      echo $calendrier[$i];
+  <?php
+  if(!empty($_POST['gender']) && !empty($_POST['lastname']) && !empty($_POST['firstname']) && !empty($_FILES['sendFile'])){
+    $pathFile = pathinfo($_FILES['sendFile']['name']);
+    if ($pathFile['extension'] == 'pdf'){
+      echo $_POST['gender'] . ' ' . $_POST['lastname'] . ' ' . $_POST['firstname'] . ' ' . $pathFile['filename'] . ' ' . $pathFile['extension'];
+    } else {
+      echo 'seul les extensions pdf sont accepté.';
     };
-     ?>
-  </p>
+  } else {
+    ?>
+    <form enctype="multipart/form-data" action="index.php" method="POST">
+      <select name="gender">
+        <option value="Mr">Mr</option>
+        <option value="Mme">Mme</option>
+      </select>
+      <input type="text" name="lastname" />
+      <input type="text" name="firstname" />
+      <input type="file" name="sendFile" />
+      <input type="submit" value="Envoyer" />
+    </form>
+  <?php }?>
 </body>
 </html>

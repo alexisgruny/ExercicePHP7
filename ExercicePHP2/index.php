@@ -2,15 +2,13 @@
 <html lang=fr>
 <head>
   <meta charset="utf-8" />
-  <title>Exercice 2</title>
+  <title>Exercice 1</title>
 </head>
 <body>
-  <p>
-    <?php
-    echo $_GET['lastname'];
-    echo $_GET['firstname'];
-    echo (empty($_GET['age']))? ' empty': $_GET['age'];
-     ?>
-  </p>
+  <form action="user.php" method="POST">
+  <input type="text" name="lastName" />
+  <input type="text" name="firstName" />
+  <input type="submit" value="envoyer" />
+  </form>
 </body>
 </html>

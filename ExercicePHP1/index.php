@@ -5,11 +5,10 @@
   <title>Exercice 1</title>
 </head>
 <body>
-  <p>
-    <?php
-    echo $_GET['lastname'];
-    echo $_GET['firstname']; 
-     ?>
-  </p>
+  <form action="user.php" method="GET">
+  <input type="text" name="lastName" />
+  <input type="text" name="firstName" />
+  <input type="submit" value="envoyer" />
+  </form>
 </body>
 </html>
